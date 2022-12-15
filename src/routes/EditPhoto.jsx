@@ -1,12 +1,11 @@
-import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EditPhoto = () => {
   const [imageUrl, setImageUrl] = useState("");
   const [captions, setCaptions] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [loading] = useState(false);
+  const [error] = useState(null);
   const navigate = useNavigate();
   const { id } = useParams();
 

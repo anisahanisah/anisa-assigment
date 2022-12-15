@@ -28,7 +28,7 @@ const AddPhoto = () => {
         },
       })
       navigate("/photos");
-    }else if (secret != "password") {
+    }else if (secret !== "password") {
       setError("You are not authorized");
     }
   };
