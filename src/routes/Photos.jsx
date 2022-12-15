@@ -15,7 +15,7 @@ const Photos = () => {
     await fetch( Url , {
       method: "DELETE"
     })
-    const filter = photos.filter((photo) => photo.id != id)
+    const filter = photos.filter((photo) => photo.id !== id)
     setPhotos(filter)
     // TODO: answer here
   };
